@@ -2,8 +2,13 @@ FROM node:24-alpine AS build
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json ./
 RUN npm install
+RUN npm install bootstrap @popperjs/core
+RUN npm install @phosphor-icons/react
+RUN npm install jquery
+RUN npm install -D postcss autoprefixer
+RUN npm install animejs
 RUN npm ci
 
 COPY . .
