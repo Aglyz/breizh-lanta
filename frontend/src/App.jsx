@@ -1,38 +1,26 @@
 import { useEffect } from 'react'
-import { animate } from 'animejs'
-import { MountainsIcon } from "@phosphor-icons/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Nav from './components/Nav.jsx'
+import Footer from './components/Footer.jsx'
+
+import Home from "./pages/Home.jsx";
+import Signup from "./pages/Signup.jsx";
+import Admin from "./pages/Admin.jsx";
+
 import './App.css'
 
 function App() {
-  useEffect(() => {
-    const animation = animate('.bl-animation', {
-      opacity: [0, 1],
-      translateY: [30, 0],
-      duration: 1000,
-      ease: 'outExpo'
-    })
-
-    return () => animation.pause()
-  }, [])
-
   return (
-    <main className="container py-5">
-      <div className="bl-animation">
-        <h1 className="text-success">
-          <MountainsIcon size={32} className="me-2"/>
-          Breizh-Lanta
-        </h1>
-
-        <p className="lead">
-          Bienvenue dans l'aventure !
-        </p>
-
-        <button className="btn btn-success">
-          Commencer
-        </button>
-
-      </div>
-    </main>
+    <Router>
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
+      <Footer />
+    </Router>
   )
 }
 

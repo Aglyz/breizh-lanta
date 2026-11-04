@@ -1,0 +1,41 @@
+.footdelimiter-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    height: 20px;
+    min-height: 20px;
+}
+
+.footdelimiter-item {
+    flex: 1;
+    background-color: var(--blanta-white);
+}
+
+.footdelimiter-item.white {
+    background-color: var(--blanta-white);
+}
+
+.footdelimiter-item.red {
+    background-color: var(--blanta-red);
+}
+
+.footdelimiter-item.pink {
+    background-color: var(--blanta-pink);
+}
+
+.footdelimiter-item.yellow {
+    background-color: var(--blanta-yellow);
+}
+
+.footdelimiter-item.green {
+    background-color: var(--blanta-green);
+}
+
+.footdelimiter-item.purple {
+    background-color: var(--blanta-purple);
+}
+
+.footdelimiter-item.blue {
+    background-color: var(--blanta-blue);
+}

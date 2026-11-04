@@ -1,0 +1,30 @@
+:root {
+    --blanta-red: #B62D24;
+    --blanta-pink: #E07A5F;
+    --blanta-yellow: #D8AF20;
+    --blanta-green: #28AB88;
+    --blanta-purple: #8B5099;
+    --blanta-blue: #3465AC;
+
+    --blanta-white: #FFFFFF;
+    --blanta-smoke: #E6E6E6;
+    --blanta-black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    
+    background-color: var(--blanta-white);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
