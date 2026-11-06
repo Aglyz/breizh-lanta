@@ -1,0 +1,212 @@
+.ranking-show-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.podium {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 148px;
+    
+    min-height: 384px;
+}
+
+.podium.first > .podium-team,
+.podium.second > .podium-team {
+    flex: 1;
+}
+
+.podium.third > .podium-team,
+.podium.first > .podium-pillar {
+    flex: 2;
+}
+
+.podium.second > .podium-pillar,
+.podium.third > .podium-pillar {
+    flex: 1;
+}
+
+.podium-team {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.podium-pillar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.podium-pillar > .podium-name {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+
+    width: 100%;
+
+    margin-top: .5rem;
+
+    color: var(--blanta-white);
+    text-align: center;
+}
+
+.podium-pillar > .podium-rank {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+
+    width: 100%;
+
+    color: var(--blanta-white);
+    text-align: center;
+}
+
+.podium-team > img,
+.team-logo {
+    height: 96px;
+    width: 96px;
+
+    background-color: var(--blanta-smoke);
+    border-radius: 50%;
+}
+
+.podium-pillar {
+    background-color: var(--blanta-smoke);
+}
+
+.podium-pillar.red {
+    background-color: var(--blanta-red);
+}
+
+.podium-pillar.pink {
+    background-color: var(--blanta-pink);
+}
+
+.podium-pillar.yellow {
+    background-color: var(--blanta-yellow);
+}
+
+.podium-pillar.green {
+    background-color: var(--blanta-green);
+}
+
+.podium-pillar.purple {
+    background-color: var(--blanta-purple);
+}
+
+.podium-pillar.blue {
+    background-color: var(--blanta-blue);
+}
+
+.podium-line {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    background-color: var(--blanta-white);
+}
+
+.podium-bg {
+    position: absolute;
+
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+
+    margin: 1rem;
+}
+
+.podium-line > * {
+    z-index: 100;
+}
+
+.podium-line > .podium-bg {
+    z-index: 50;
+}
+
+.podium-line.red > .podium-bg {
+    background-color: var(--blanta-red);
+}
+
+.podium-line.pink > .podium-bg {
+    background-color: var(--blanta-pink);
+}
+
+.podium-line.yellow > .podium-bg {
+    background-color: var(--blanta-yellow);
+}
+
+.podium-line.green > .podium-bg {
+    background-color: var(--blanta-green);
+}
+
+.podium-line.purple > .podium-bg {
+    background-color: var(--blanta-purple);
+}
+
+.podium-line.blue  > .podium-bg {
+    background-color: var(--blanta-blue);
+}
+
+.podium-line > .podium-rank {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+
+    color: var(--blanta-smoke);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-basis: 96px;
+    height: 100%;
+
+    transform: skew(-20deg);
+    background-color: var(--blanta-white);
+}
+
+.podium-line.red > .podium-rank {
+    color: var(--blanta-red);
+}
+
+.podium-line.pink > .podium-rank {
+    color: var(--blanta-pink);
+}
+
+.podium-line.yellow > .podium-rank {
+    color: var(--blanta-yellow);
+}
+
+.podium-line.green > .podium-rank {
+    color: var(--blanta-green);
+}
+
+.podium-line.purple > .podium-rank {
+    color: var(--blanta-purple);
+}
+
+.podium-line.blue  > .podium-rank {
+    color: var(--blanta-blue);
+}
+
+.podium-line > .podium-name {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+
+    color: var(--blanta-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
 
-import Home from "./pages/Home.jsx";
-import Signup from "./pages/Signup.jsx";
-import Admin from "./pages/Admin.jsx";
+import Home from "./pages/Home/Home.jsx";
+import Signup from "./pages/Signup/Signup.jsx";
+import Admin from "./pages/Admin/Admin.jsx";
 
 import './App.css'
 

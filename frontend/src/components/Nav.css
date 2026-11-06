@@ -1,6 +1,7 @@
 #nav-lanta {
     --bs-navbar-padding-y: 0;
 
+    background-color: var(--blanta-white);
     border-bottom: 1px solid var(--blanta-smoke);
 }
 

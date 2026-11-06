@@ -1,0 +1,68 @@
+.blanta-team {
+    height: 192px;
+    width: 192px;
+    aspect-ratio: 1/1;
+
+    border-radius: 24px;
+    background-color: var(--blanta-smoke);
+}
+
+.blanta-team.white {
+    background-color: var(--blanta-white);
+}
+
+.blanta-team.red {
+    background-color: var(--blanta-red);
+}
+
+.blanta-team.pink {
+    background-color: var(--blanta-pink);
+}
+
+.blanta-team.yellow {
+    background-color: var(--blanta-yellow);
+}
+
+.blanta-team.green {
+    background-color: var(--blanta-green);
+}
+
+.blanta-team.purple {
+    background-color: var(--blanta-purple);
+}
+
+.blanta-team.blue {
+    background-color: var(--blanta-blue);
+}
+
+.blanta-team-logo-container,
+.blanta-team-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blanta-team-logo-container {
+    flex: 2;
+}
+
+.blanta-team-name-container {
+    flex: 1;
+}
+
+.blanta-team-bg {
+    height: 96px;
+    width: 96px;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+    background-color: var(--blanta-white);
+}
+
+.blanta-team-name {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--blanta-white);
+}
+
