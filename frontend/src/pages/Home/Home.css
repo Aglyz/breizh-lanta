@@ -1,0 +1,30 @@
+.triskele, .hermine {
+    position: absolute;
+    z-index: -10;
+    
+    padding: 0;
+    width: 192px;
+    height: 192px;
+}
+
+.triskele > *,
+.hermine > * {
+    fill: var(--blanta-smoke) !important;
+}
+
+.hermine .cls-1 {
+    fill: var(--blanta-smoke) !important;
+}
+
+.blanta-team-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 96px;
+    width: 96px;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+    background-color: var(--blanta-white);
+}

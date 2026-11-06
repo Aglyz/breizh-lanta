@@ -50,19 +50,9 @@
     flex: 1;
 }
 
-.blanta-team-bg {
-    height: 96px;
-    width: 96px;
-    aspect-ratio: 1/1;
-
-    border-radius: 50%;
-    background-color: var(--blanta-white);
-}
-
 .blanta-team-name {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
     color: var(--blanta-white);
 }
-

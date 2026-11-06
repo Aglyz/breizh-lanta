@@ -5,6 +5,7 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install
 RUN npm install react-router-dom
+RUN npm install -D vite-plugin-svgr
 RUN npm install bootstrap @popperjs/core
 RUN npm install @phosphor-icons/react
 RUN npm install jquery
